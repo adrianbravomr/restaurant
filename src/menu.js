@@ -1,3 +1,6 @@
+import image1 from './assets/burger.png'
+import image2 from './assets/burger2.png'
+
 const menupage = () => {
 
     const Card = (title,description,ingredients,price,image) => {
@@ -48,11 +51,11 @@ const menupage = () => {
     let title = document.createElement('h1');
     menu.append(title);
     menu.appendChild(
-        Card('Rainy Day Burger','Your favourite, created during a long, heavy rain in London.',['Onion Rings','Cheddar','BBQ','Meat'],"9,99", new URL('./assets/burger.png', import.meta.url))
+        Card('Rainy Day Burger','Your favourite, created during a long, heavy rain in London.',['Onion Rings','Cheddar','BBQ','Meat'],"9,99",image1)
         .getHTML()
     )
     menu.appendChild(
-        Card('Double F Burger','Flavors! Fun! What else do you need?',['Lettuce','Bacon','Pickle','Meat'],"4,99",new URL('./assets/burger2.png', import.meta.url))
+        Card('Double F Burger','Flavors! Fun! What else do you need?',['Lettuce','Bacon','Pickle','Meat'],"4,99",image2)
         .getHTML()
     )    
 
