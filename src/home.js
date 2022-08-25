@@ -1,6 +1,7 @@
 import 'material-design-icons-iconfont'
 import { locationCard, timeCard } from './contact.js';
 import { updateContent,menu } from "./index.js";
+import homeImg from './assets/home.webp';
 
 const homepage = () => {
     let home = document.createElement('div');
@@ -9,7 +10,7 @@ const homepage = () => {
     hero.classList.add('home-hero');
     let heroImg = document.createElement('img');
     heroImg.classList.add('hero-img');
-    heroImg.src = new URL('./assets/home.webp',import.meta.url);
+    heroImg.src = homeImg;
     let heroCont = document.createElement('div');
     heroCont.classList.add('hero-cont');
     let heroContTitle = document.createElement('div');
